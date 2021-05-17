@@ -7,8 +7,16 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="mynavi-sample-ecs-backend" />
+        <module name="mynavi-sample-aws-ecs-backend-for-frontend" />
         <module name="mynavi-sample-ecs-backend-for-frontend" />
+        <module name="mynavi-sample-aws-ecs-backend" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="mynavi-sample-aws-ecs-backend" options="-parameters" />
+      <module name="mynavi-sample-aws-ecs-backend-for-frontend" options="-parameters" />
+    </option>
   </component>
 </project>
